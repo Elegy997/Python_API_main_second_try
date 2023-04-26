@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="indexStyle.css" />
+  </head>
+  <body>
+    <div class="Gomb"><a href="add.html">Add data</a></div>
+    <h2 class="cim">Autók adatai</h2>
+    <!--
+    <form>
+      <input type="radio" name="tablazat" onclick="szam(1)" style="position: absolute; top: 50px; left: 210px"></input>
+      <p style="position: absolute; top: 50px; left: 230px">Alapadatok</p>
+      <input type="radio" name="tablazat" onclick="szam(2)" style="position: absolute; top: 50px; left: 330px"></input>
+      <p style="position: absolute; top: 50px; left: 350px">Teljesítmény</p>
+      <input type="radio" name="tablazat" onclick="szam(3)" style="position: absolute; top: 50px; left: 450px"></input>
+      <p style="position: absolute; top: 50px; left: 470px">Egyéb</p>
+    </form>
+    -->
+    
+    <form action="" method="post">
+      <table border="5">
+        <thead>
+          <td class="hatter">ID</td>
+          <!-- Alap adatok -->
+          <td class="hatter">Márka, típus</td>
+          <td class="hatter">Gyártási év</td>
+          <td class="hatter">Km-ek száma</td>
+          <td class="hatter">Minek használták előtte (taxi, rendőrautó)</td>
+          <td class="hatter">Műszaki vizsga érvényesség</td>
+          <td class="hatter">Rendszám (körözik-e)</td>
+          <!-- Teljesítmény -->
+          <td class="hatter">Motor mérete</td>
+          <td class="hatter">Lóerők száma</td>
+          <td class="hatter">Gyorsulás</td>
+          <td class="hatter">Végsebesség</td>
+          <td class="hatter">Maximális fordulatszám</td>
+          <td class="hatter">Súly</td>
+          <td class="hatter">Sebváltó típusa</td>
+          <td class="hatter">Sebességek száma</td>
+          <!-- Egyéb -->
+          <td class="hatter">Fogyasztás</td>
+          <td class="hatter">Benzin típusa</td>
+          <td class="hatter">Biztonság (abs, esp)</td>
+          <td class="hatter">
+            Átalakítás (turbó, body kit, spoiler, fóliázva)
+          </td>
+          <td class="hatter">Kiegészítés (elektromos ablak)</td>
+        </thead>
+        <!-- a javascript.js-ben lesz kifejtve, hogy mi van a tbody-ban -->
+        <tbody id="view"></tbody>
+      </table>
+    </form>
+    <script src="javascript.js"></script>
+  </body>
+</html>
